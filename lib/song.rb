@@ -65,5 +65,9 @@ class Song
     song.name = split_name.last.split(".").first
     song
   end
+  
+  def self.destroy_all
+    @@all.clear
+  end
 end
 
